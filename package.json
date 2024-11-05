@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
+    "lint": "eslint --flag unstable_config_lookup_from_file .",
     "format": "prettier --write .",
     "prepare": "husky",
-    "common": "pnpm --filter common"
+    "common": "pnpm --filter common",
+    "react-app": "pnpm --filter react-app"
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
-      "eslint --fix"
+      "eslint --fix --flag unstable_config_lookup_from_file"
     ],
     "**/*": "prettier --write --ignore-unknown"
   },
