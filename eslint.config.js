@@ -12,6 +12,7 @@ export default [
   js.configs.recommended,
   ...tseslint.configs.recommended,
   react.configs.flat.recommended,
+  react.configs.flat['jsx-runtime'],
   eslintPluginPrettierRecommended,
   {
     ignores: [
