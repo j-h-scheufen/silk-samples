@@ -19,7 +19,7 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
-    "common": "workspace:*",
+    "silk-samples-common": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
